@@ -1,9 +1,20 @@
-function showMessage() {
-    document.getElementById("message").innerHTML =
-        "👋 Thank you for visiting my portfolio!";
-}
+const contactForm = document.getElementById("contactForm");
+const message = document.getElementById("message");
 
-// Highlight active navigation while scrolling
+contactForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+
+    message.innerHTML =
+        "Thank you, " + name + "! Your message has been submitted successfully.";
+
+    contactForm.reset();
+
+});
+
+
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-links a");
 
