@@ -149,25 +149,54 @@
 
         </div>
 
-    </section>
+   </section>
 
     <section id="contact">
 
-        <h2 class="title">Contact Me</h2>
+    <h2 class="title">Contact Me</h2>
 
-        <p>Email : badhon242-35-428@diu.edu.bd</p>
+    <p>Email: badhon242-35-428@diu.edu.bd</p>
+    <p>Phone: +8801680074257</p>
+    <p>GitHub: github.com/aljubairbadhon</p>
 
-        <p>Phone : +8801680074257</p>
+    <div class="contact-form">
 
-        <p>GitHub : https://github.com/aljubaribadhon</p>
+        <form id="contactForm">
 
-        <button onclick="showMessage()">
-            Say Hello
-        </button>
+            <input 
+                type="text" 
+                id="name" 
+                name="name"
+                placeholder="Your Name" 
+                required
+            >
+
+            <input 
+                type="email" 
+                id="email" 
+                name="email"
+                placeholder="Your Email" 
+                required
+            >
+
+            <textarea 
+                id="userMessage" 
+                name="message"
+                placeholder="Your Message"
+                rows="6"
+                required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
 
         <p id="message"></p>
 
-    </section>
+    </div>
+
+</section>
+    
 
     <footer>
 
